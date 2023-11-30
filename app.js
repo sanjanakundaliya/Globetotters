@@ -83,7 +83,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello from root");
+  res.redirect("/listings");
 });
 
 app.get("/demoUser", async (req, res) => {
